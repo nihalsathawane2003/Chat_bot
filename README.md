@@ -18,7 +18,7 @@ Follow these steps to set up and run the project locally.
 ### Prerequisites
 
 - Python 3.9 or higher
-- A valid Gemini Flash API key (Sign up [here]((https://aistudio.google.com/app/apikey))
+- A valid Gemini Flash API key (Sign up [here]([https://aistudio.google.com/app/apikey])
 - Internet connection to access the API
 
 ### Installation
