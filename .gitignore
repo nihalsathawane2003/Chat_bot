@@ -1,0 +1,67 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Python files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignore virtual environments
+env/
+venv/
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore logs and databases
+*.log
+*.sqlite3
+*.db
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.bak
+*.pid
+*.seed
+
+# Ignore compiled code
+*.class
+*.o
+*.so
+*.dll
+*.exe
+
+# Ignore package files
+*.egg-info/
+*.egg
+dist/
+build/
+*.wheel
+
+# Ignore node_modules
+node_modules/
+
+# Ignore images or output files (optional)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.svg
+*.tiff
+*.ico
+
+# Ignore other sensitive or temporary files
+.env
+.secret
