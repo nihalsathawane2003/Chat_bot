@@ -1,0 +1,61 @@
+docker ps
+
+mkdir webpages
+
+Cd webpages
+
+nano index.html
+Cd . .
+
+docker run -p 8080:80 --name another_nginx -v ${PWD}/webpagesEnd:/usr/share/nginx/html -d nginx
+
+docker exec -it another_nginx /bin/bash
+
+cat usr/share/nginx/html/index.html
+
+docker stop 6dd4b47a3b0ev
+
+
+
+
+Java code
+
+
+mkdir myjavapro
+
+cd myjavapro
+
+nano hello.java
+
+public class hello{
+public static void main(String[] args){
+
+System.out.println("Hello java");
+}
+}
+
+
+Nano Dockerfile
+FROM          eclipse-temurin:17-jdk-alpine
+WORKDIR       /app
+COPY          hello.java   /app
+RUN           javac hello.java
+CMD           ["java", "hello"]
+
+docker build -t docker-id/cdac-java:1.0 .
+docker run docker-id/cdac-java:1.0
+
+
+Docker login
+
+docker tag docker-id/cdac-java:1.0 nihal017/cdac-java:1.0
+docker image
+
+
+docker push nihal017/cdac-java:1.0
+
+
+
+
+
+
